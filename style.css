@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color:#f6f8f8;
+    color:gray;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    position: relative;
+}
+.aside{
+    position:absolute;
+    left:0;
+    top:0;
+
+    width:280px;
+    min-height: 300px;
+    border:solid 1px #c4c4c4;
+    box-shadow: 1px 2px 3px #c4c4c4;
+    border-radius: 5px;
+    background-color: white;
+}
+.aside-newitem,.main-records{
+    height: 50px;
+    border-bottom: solid 1px #c4c4c4;
+    padding-left: 15px;
+}
+.aside-form{
+ padding: 25px;
+}
+.aside-newitem span,.main-records span{
+    line-height: 50px;
+}
+
+.main{
+    margin-left: 310px;
+    border:solid 1px #c4c4c4;
+    min-height: 400px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 2px 3px #c4c4c4;
+}
+.form-ul{
+    list-style: none;
+}
+.form-ul>li{
+    padding-bottom: 5px;
+}
+.form-ul>li span{
+    display: inline-block;
+    width:100%;
+}
+.item{
+    width:100%;
+    height: 25px;
+}
+.form-btn{
+    overflow: hidden;
+}
+.btn_submit{
+    padding: 5px;
+    width: 80px;
+    float: right;
+}
+.main-content-items{
+    overflow: hidden;
+    position: relative;
+    margin: 25px;
+    padding-bottom: 25px;
+   border-bottom: solid 1px #c4c4c4;
+}
+.item_image{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+.item_info{
+    float: right;
+    /*margin-left: 110px;*/
+    margin-right: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.item_info p{
+  margin-bottom: 8px;
+}
+.item_oper{
+    position: absolute;
+    right: 0;
+    width:150px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.category{
+    color: #c4c4c4;
+}
+.name{
+  color: #21abc7;
+    font-size: 25px;
+}
+.des{
+    color: #4e4e4e;
+    font-size: 13px;
+}
+.time{
+    color: #afafaf;
+    border:solid 1px #afafaf;
+    width:90px;
+    padding:2px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.btn_start{
+    width: 120px;
+    padding: 5px;
+    background-color:#21abc7 ;
+    color:white;
+    border-radius: 15px;
+    text-align: center;
+    cursor:pointer;
+
+}
+.a_bookmark{
+   font-size: 12px;
+    text-align: center;
+    width: 120px;
+    margin-top: 10px;
+    cursor:pointer;
+
+}
