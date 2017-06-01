@@ -1,0 +1,22 @@
+{
+  "name": "angular-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinghaitvxq/angular-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qinghaitvxq/angular-project/issues"
+  },
+  "homepage": "https://github.com/qinghaitvxq/angular-project#readme",
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}

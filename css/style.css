@@ -59,31 +59,34 @@ body{
 .item{
     width:100%;
     height: 25px;
+    outline: none;
 }
 .form-btn{
     overflow: hidden;
 }
 .btn_submit{
-    padding: 5px;
+    padding: 10px;
     width: 80px;
     float: right;
+
 }
 .main-content-items{
     overflow: hidden;
     position: relative;
     margin: 25px;
     padding-bottom: 25px;
-   border-bottom: solid 1px #c4c4c4;
+    border-bottom: solid 1px #c4c4c4;
 }
 .item_image{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     margin-left: 10px;
+    width:100px;
 }
 .item_info{
-    float: right;
-    /*margin-left: 110px;*/
+    float: left;
+    margin-left: 130px;
     margin-right: 180px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -134,5 +137,11 @@ body{
     width: 120px;
     margin-top: 10px;
     cursor:pointer;
-
+}
+.ng-invalid.ng-dirty{
+    border-color:#d40000;
+    box-shadow: none;
+}
+.ng-valid.ng-dirty{
+    border-color: #00a900;
 }
