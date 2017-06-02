@@ -1,0 +1,20 @@
+<ul>
+    <li ng-repeat="courese in coursectrl.courseList track by $index">
+        <div class="main-content-items">
+            <div class="item_image">
+                <img width="100px" height="100px" ng-src="{{courese.image}}">
+            </div>
+            <div class="item_info">
+                <p class="category">{{courese.category}}</p>
+                <p class="name">{{courese.name}}</p>
+                <p class="des">{{courese.des}}</p>
+                <div class="time"> ~{{courese.time}}HOURS</div>
+            </div>
+
+            <div class="item_oper">
+                <div class="btn_start"> start course</div>
+                <div class="a_bookmark"> Add bookmark</div>
+            </div>
+        </div>
+    </li>
+</ul>

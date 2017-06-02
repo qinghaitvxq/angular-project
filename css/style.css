@@ -145,3 +145,6 @@ body{
 .ng-valid.ng-dirty{
     border-color: #00a900;
 }
+.errMsg{
+    color:red;
+}
