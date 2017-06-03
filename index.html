@@ -5,28 +5,23 @@
     <title>Angular项目模板</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="node_modules/angular/angular.min.js" ></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/course.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/directives/course.js"></script>
+    <script src="js/directives/courseform.js"></script>
+
 
 </head>
 <body ng-app="app" ng-controller="MainController as mainctrl">
+  <div class="nav-bar">
+    <ul>
+        <li><a href="#/intro">intro</a></li>
+        <li><a href="#/course">course</a></li>
+    </ul>
+   </div>
   <div class="container">
-      <div class="aside">
-          <div class="aside-newitem">
-              <span>New Items:</span>
-          </div>
-          <course-form></course-form>
-
-      </div>
-          <div class="main">
-          <div class="main-records">
-              <span>{{courseList.length}} records now</span>
-          </div>
-          <div class="main-content">
-             <course-list coursedata="courseList"></course-list>
-
-          </div>
-      </div>
+      <div ng-view=""></div>
   </div>
 
 </body>
