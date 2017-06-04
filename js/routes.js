@@ -7,18 +7,24 @@ angular.module("app")
         $locationProvider.hashPrefix('');
         $routeProvider.
         when('/', {
-            templateUrl: '/angular-project/template/pages/intro.html'
-        }).
-        when('/intro', {
             templateUrl: '/angular-project/template/pages/intro.html',
-            controller:''
+            controller:'IntroController',
+            controllerAs:'introCtrl'
         }).
         when('/course', {
             templateUrl: '/angular-project/template/pages/course.html',
             controller:''
         })
-            .otherwise({
-                redirectTo: '/'
-            });
+        .when('/intro',{
+             redirectTo: '/'
+        })
+         .when('/intro/:name',{
+             templateUrl:'/angular-project/template/pages/descshow.html',
+             controller:'DescController',
+             controllerAs:'descCtrl'
+         })
+         .otherwise({
+             redirectTo: '/'
+        });
 
     }])

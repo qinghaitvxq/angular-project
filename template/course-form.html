@@ -4,7 +4,7 @@
 </div>
 <div class="aside-form">
     <form name="courseform"
-          ng-submit="courseform.$valid && formctrl.addCourse(formctrl.course) && courseform.$setPristine()"  novalidate>
+          ng-submit="courseform.$valid && formctrl.addCourse(formctrl.course)"  novalidate>
         <ul class="form-ul">
             <li> <span> name:</span> <input  ng-model="formctrl.course.name" type="text" class="item" required></li>
             <li> <span> category:</span> <input ng-model="formctrl.course.category" type="text" class="item" required></li>
@@ -14,6 +14,7 @@
         </ul>
         <div class="form-btn">
             <span class="errMsg" ng-show="courseform.$invalid">error</span>
+            <span>{{formctrl.errors}}</span>
             <input type="submit" value="submit" class="btn_submit">
         </div>
     </form>

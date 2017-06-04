@@ -1,0 +1,13 @@
+{
+  "words":"Learn,Practice,Win",
+  "clist":[{
+    "name":"javascript",
+    "description":"javascript description"
+  },{
+    "name":"css",
+    "description":"css description"
+  },{
+    "name":"nodejs",
+    "description":"nodejs description"
+  }]
+}
