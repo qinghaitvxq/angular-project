@@ -19,7 +19,7 @@ body{
     left:0;
     top:0;
 
-    width:280px;
+    width:240px;
     min-height: 300px;
     border:solid 1px #c4c4c4;
     box-shadow: 1px 2px 3px #c4c4c4;
@@ -183,4 +183,22 @@ body{
     width:200px;
     padding: 10px;
     margin-bottom: 10px;
+}
+.course-category-ul{
+  background-color: #f6f8f8;
+    margin-top: 20px;
+}
+.course-category-ul li{
+    border-bottom: solid 1px #dcd1d1;
+    padding: 10px 8px;
+    cursor: pointer;
+}
+.course-category-ul li:hover{
+   background-color: #c4c4c4;
+    color: white;
+
+}
+.active{
+    background-color: #21abc7;
+    color:white;
 }

@@ -9,4 +9,48 @@
             templateUrl:"/angular-project/template/course-list.html"
         }
     });
+    app.directive("courseSelect",function (Category) {
+        return{
+            restrict:'E',
+            templateUrl:"/angular-project/template/course-select.html",
+            replace:true,
+            scope:{},
+            controller:function ($scope) {
+                this.getActiveCategory=function () {
+                    return $scope.activeCategory;
+                }
+                this.setActiveCategory=function (category) {
+                    console.log('22');
+                    console.log(category);
+                    $scope.activeCategory=category.name;
+                }
+            },
+            link:function(scope,element,attrs){
+            Category.allCategory().then(function (data) {
+               scope.category=data.data;
+            });
+          }
+        }
+    });
+    app.directive("courseSelectItem",function () {
+        return{
+            restrict:'E',
+            templateUrl:"/angular-project/template/course-select-item.html",
+            replace:true,
+            scope:{
+                category:"="
+            },
+            require:"^courseSelect",
+            link:function (scope,element,attrs,courseSelectCtrl) {
+
+               scope.makeActive=function () {
+                   console.log('active');
+                   courseSelectCtrl.setActiveCategory(scope.category);
+               }
+               scope.categoryActive=function () {
+                   return courseSelectCtrl.getActiveCategory()===scope.category.name;
+               }
+            }
+        }
+    });
 })();
