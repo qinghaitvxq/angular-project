@@ -1,20 +1,34 @@
 [{
   "name":"Shaping Up With AngularJS",
-  "category":"javascript",
+  "category":"Javascript",
   "image":"image/1.jpg",
   "des":"Learn to extend HTML's syntax with AngularJS to create dynamic web applications.",
   "time":"5.0"
 },{
-  "name":"Staying Sharp With AngularJS",
-  "category":"javascript",
+  "name":"Shaping up with css",
+  "category":"Css",
   "image":"image/3.jpg",
   "des":"Use AngularJS to create flexible directives and reusable services for a modular and speedy app!",
   "time":"6.0"
 },{
     "name":"test",
-    "category":"javascript",
+    "category":"Angular",
     "image":"image/2.jpg",
     "des":"Use AngularJS to create flexible directives and reusable services for a modular and speedy app!",
     "time":"6.0"
 
-  }]
+  },{
+  "name":"test2",
+  "category":"Angular",
+  "image":"image/2.jpg",
+  "des":"Use AngularJS to create flexible directives and reusable services for a modular and speedy app!",
+  "time":"6.0"
+
+},{
+  "name":"Say Hello To React",
+  "category":"React",
+  "image":"image/2.jpg",
+  "des":"Use AngularJS to create flexible directives and reusable services for a modular and speedy app!",
+  "time":"6.0"
+
+}]

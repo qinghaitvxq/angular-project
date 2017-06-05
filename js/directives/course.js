@@ -14,14 +14,14 @@
             restrict:'E',
             templateUrl:"/angular-project/template/course-select.html",
             replace:true,
-            scope:{},
+            scope:{
+                activeCategory:"="
+            },
             controller:function ($scope) {
                 this.getActiveCategory=function () {
                     return $scope.activeCategory;
                 }
                 this.setActiveCategory=function (category) {
-                    console.log('22');
-                    console.log(category);
                     $scope.activeCategory=category.name;
                 }
             },
