@@ -202,3 +202,14 @@ body{
     background-color: #21abc7;
     color:white;
 }
+.searchDiv{
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+}
+.searchInput{
+    float:right;
+    height: 33px;
+    width:250px;
+    margin-bottom: 10px;
+}

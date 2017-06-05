@@ -5,7 +5,7 @@
  </div>
  <div class="main-content">
    <ul>
-    <li ng-repeat="courese in courseList | filter:{category:activeCategory} ">
+    <li ng-repeat="courese in courseList |filter:search |filter:{category:activeCategory} ">
         <div class="main-content-items">
             <div class="item_image">
                 <img width="100px" height="100px" ng-src="{{courese.image}}">
