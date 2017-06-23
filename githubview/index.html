@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="githubViewer">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="../node_modules/angular/angular.js"></script>
     <script src="mainController.js"></script>
+    <script src="script.js"></script>
+
 </head>
-<body ng-app="mainModule">
-   <div ng-controller='mainController as mainctrl'>
-       {{test}}
-   </div>
+<body ng-controller="MainController as mainctrl">
+<h1>{{message}}</h1>
+<div>{{error}}</div>
+{{countdown}}
+<form name="searchUser">
+    <input type="search" ng-model="username" placeholder="Username to find">
+    <input type="submit" value="Search" ng-click="search(username)">
+</form>
+<div ng-include="'userdetail.html'" ng-show="user"></div>
 </body>
 </html>
