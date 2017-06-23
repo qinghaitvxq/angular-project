@@ -7,7 +7,7 @@ angular.module("app")
         allintro:function () {
             return  $http({
                 method:'GET',
-                url:"/angular-project/data/intro.json"
+                url:"/angular-project/courseListDemo/data/intro.json"
             });
         }
     }
@@ -17,7 +17,7 @@ angular.module("app")
        allCategory:function () {
            return $http({
                method:'GET',
-               url:"/angular-project/data/category.json"
+               url:"/angular-project/courseListDemo/data/category.json"
            });
        }
    }

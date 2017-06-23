@@ -6,7 +6,7 @@
     app.directive("courseForm",function () {
         return{
             restrict:'E',
-            templateUrl:"/angular-project/template/course-form.html",
+            templateUrl:"/angular-project/courseListDemo/template/course-form.html",
             controller:function ($http) {
                 var controller=this;
                 controller.errors=null;

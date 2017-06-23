@@ -6,13 +6,13 @@
     app.directive("courseList",function () {
         return{
             restrict:'E',
-            templateUrl:"/angular-project/template/course-list.html"
+            templateUrl:"/angular-project/courseListDemo/template/course-list.html"
         }
     });
     app.directive("courseSelect",function (Category) {
         return{
             restrict:'E',
-            templateUrl:"/angular-project/template/course-select.html",
+            templateUrl:"/angular-project/courseListDemo/template/course-select.html",
             replace:true,
             scope:{
                 activeCategory:"="
@@ -35,7 +35,7 @@
     app.directive("courseSelectItem",function () {
         return{
             restrict:'E',
-            templateUrl:"/angular-project/template/course-select-item.html",
+            templateUrl:"/angular-project/courseListDemo/template/course-select-item.html",
             replace:true,
             scope:{
                 category:"="
