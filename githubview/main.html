@@ -1,0 +1,8 @@
+<div>
+{{countdown}}
+<form name="searchUser">
+    <input type="search" ng-model="username" placeholder="Username to find">
+    <input type="submit" value="Search" ng-click="search(username)">
+</form>
+<div ng-include="'user.html'" ng-show="user"></div>
+</div>
